@@ -13,7 +13,7 @@ import pandas as pd
 def required_directory(variable: str) -> Path:
     value = os.environ.get(variable)
     if not value:
-        raise RuntimeError(f"Set {variable}; see analysis/china_network/README.md")
+        raise RuntimeError(f"Set {variable}; see analysis/networks/README.md")
     return Path(value).expanduser().resolve()
 
 ROOT = required_directory("SWINE_ANALYSIS_ROOT")

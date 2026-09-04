@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure S2B — RF AUC lollipops from Fig2_RF_AUC_source_data.tsv (also in T24).
+# Figure S2B — RF AUC lollipops from Fig2_RF_AUC_source_data.tsv (also in source table).
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-auc_path <- plot_input("Fig2_RF_AUC_source_data.tsv.gz")
+auc_path <- data_file("figS02/FigureS2B_rf_auc.tsv.gz")
 
 auc_all <- read_tsv(
   require_file(auc_path, "Fig2_RF_AUC_source_data.tsv"),

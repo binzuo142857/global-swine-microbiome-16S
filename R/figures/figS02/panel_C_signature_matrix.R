@@ -12,7 +12,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-sig_path <- plot_input("Fig3_Signature_source_data.tsv.gz")
+sig_path <- data_file("figS02/FigureS2C_country_signatures.tsv.gz")
 
 sig <- read_tsv(sig_path, show_col_types = FALSE) %>%
   mutate(

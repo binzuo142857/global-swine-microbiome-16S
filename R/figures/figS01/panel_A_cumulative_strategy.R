@@ -16,7 +16,7 @@ strategy_colors <- c(
   "WXS" = "#6D6875", "Other" = "grey70"
 )
 
-cum <- read_tsv(source_table("T39_cumulative_samples_by_library_strategy.tsv.gz"), show_col_types = FALSE)
+cum <- read_tsv(data_file("figS01/FigureS1A_cumulative_samples.tsv.gz"), show_col_types = FALSE)
 
 cum <- cum %>%
   mutate(

@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 1H — taxonomic accumulation curves from T14.
+# Figure 1H — taxonomic accumulation curves.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-t14_path <- require_file(source_table("T14_taxon_accumulation_discovery.tsv.gz"))
+t14_path <- require_file(data_file("fig01/Figure1H_taxon_accumulation.tsv.gz"))
 rare <- read_tsv(t14_path, show_col_types = FALSE)
 
 # Prefer global sample accumulation rows if present.

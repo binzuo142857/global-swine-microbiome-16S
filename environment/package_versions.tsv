@@ -117,3 +117,12 @@ graphlayouts	1.2.3	4.4.3	FALSE
 ggraph	2.2.2	4.4.3	TRUE
 maps	3.4.3	4.4.3	TRUE
 ggridges	0.5.7	4.4.3	TRUE
+class	7.3-23	4.4.3	FALSE
+proxy	0.4-29	4.4.3	FALSE
+e1071	1.7-17	4.4.3	FALSE
+KernSmooth	2.23-26	4.4.3	FALSE
+classInt	0.4-11	4.4.3	FALSE
+wk	0.9.5	4.4.3	FALSE
+s2	1.1.9	4.4.3	FALSE
+units	1.0-1	4.4.3	FALSE
+sf	1.1-0	4.4.3	TRUE

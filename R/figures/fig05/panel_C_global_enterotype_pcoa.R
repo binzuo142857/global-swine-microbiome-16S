@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5C — global feces enterotype PCoA from T37.
+# Figure 5C — global feces enterotype PCoA.
 
 suppressPackageStartupMessages({
   library(tidyverse)

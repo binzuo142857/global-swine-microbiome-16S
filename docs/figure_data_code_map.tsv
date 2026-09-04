@@ -1,36 +1,37 @@
 figure	panels	script	input_files	description	notes
-fig01	A	R/figures/fig01/panel_A_world_map.R	data/source_tables/T10_geographic_sample_counts.tsv.gz	Figure 1A — world sample-count choropleth from T10.	Saved results; deterministic plotting
-fig01	B	R/figures/fig01/panel_B_read_density.R	data/plot_inputs/fig01B_sample_read_counts.tsv.gz	Figure 1B — read-count density.	Saved results; deterministic plotting
-fig01	C	R/figures/fig01/panel_C_shannon.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz	Figure 1C — Shannon histogram + density from T11.	Saved results; deterministic plotting
-fig01	D,E,F,G	R/figures/fig01/panel_DEFG_rank_dual_axis.R	data/plot_inputs/Task4_overview_dual_axis_top10_source.tsv.gz	Figure 1D–G — rank top-10 prevalence/abundance dual-axis panels from Task4.	Saved results; deterministic plotting
-fig01	H	R/figures/fig01/panel_H_rarefaction.R	data/source_tables/T14_taxon_accumulation_discovery.tsv.gz	Figure 1H — taxonomic accumulation curves from T14.	Saved results; deterministic plotting
-fig01	I	R/figures/fig01/panel_I_core_scatter.R	data/source_tables/T12_global_taxonomic_composition_summary.tsv.gz;data/source_tables/T13_global_core_taxa.tsv.gz	Figure 1I — core genera scatter from T12 (genus) + T13 (core list).	Saved results; deterministic plotting
-fig02	A	R/figures/fig02/panel_A_sample_counts.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz	Figure 2A — continent sample counts from T11.	Saved results; deterministic plotting
-fig02	B	R/figures/fig02/panel_B_shannon.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz	Figure 2B — continent Shannon violin from T11.	Saved results; deterministic plotting
-fig02	C	R/figures/fig02/panel_C_pcoa.R	data/source_tables/T22_pcoa_coordinates.tsv.gz	Figure 2C — continent Bray-Curtis PCoA density + IQR crosshairs from T22.	Saved results; deterministic plotting
-fig02	D	R/figures/fig02/panel_D_signatures.R	data/source_tables/T23_Figure2D_integrated_signature_source.tsv.gz;data/source_tables/T41_fig02D_continent_abund_prev.tsv.gz	Figure 2D — continent signature composite, aligned to	Saved results; deterministic plotting
-fig03	A,B,C	R/figures/fig03/panel_ABC_networks.R	data/plot_inputs/corrected_continental_network_edges.tsv.gz;data/plot_inputs/corrected_continental_network_nodes.tsv.gz	Figure 3A–C — continent-specific co-abundance networks.	Saved results; deterministic plotting
-fig03	D	R/figures/fig03/panel_D_discovery.R	data/source_tables/T35_taxon_discovery_by_continent.tsv.gz	Figure 3D — continent taxon discovery curves from T35.	Saved results; deterministic plotting
-fig03	E	R/figures/fig03/panel_E_unidentified.R	data/source_tables/T36_unidentified_taxa_by_continent_rank.tsv.gz	Figure 3E — unidentified taxa by rank × continent from T36.	Saved results; deterministic plotting
-fig03	F	R/figures/fig03/panel_F_summary.R	data/plot_inputs/corrected_continental_network_summary.tsv.gz	Figure 3F — continental network summary bubble matrix.	Saved results; deterministic plotting
-fig04	B	R/figures/fig04/panel_B_group_counts.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz	Figure 4B — China breed-group sample counts (Commercial / Crossbred / Indigenous).	Saved results; deterministic plotting
-fig04	C	R/figures/fig04/panel_C_shannon.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz;data/plot_inputs/fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	Figure 4C — China breed Shannon: violin + slim box + median + BH Wilcoxon stars.	Saved results; deterministic plotting
-fig04	D,E,F	R/figures/fig04/panel_DEF_networks.R	data/source_tables/T09_taxonomy_dictionary.tsv.gz;data/plot_inputs/china_breed_corrected_displayed_edges.tsv.gz;data/plot_inputs/china_breed_corrected_displayed_nodes.tsv.gz	Figure 4D–F — China breed-specific co-abundance networks.	Saved results; deterministic plotting
-fig04	G	R/figures/fig04/panel_G_ancombc_bubble.R	data/source_tables/T42_fig04G_ova_abundance_bubble.tsv.gz	Figure 4G — China breed one-vs-all ANCOM-BC2 abundance bubble.	Size: mean relative abundance (%); colour: OVA LFC; marks: supplied robust_sig
-fig05	A	R/figures/fig05/panel_A_gut_shannon.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz	Figure 5A — gut-site Shannon from T11.	Saved results; deterministic plotting
-fig05	B	R/figures/fig05/panel_B_gut_pcoa_ridges.R	data/source_tables/T22_pcoa_coordinates.tsv.gz	Figure 5B — gut-site PCoA ridgelines from T22.	Saved results; deterministic plotting
-fig05	C	R/figures/fig05/panel_C_global_enterotype_pcoa.R	data/source_tables/T37_enterotype_pcoa_axis_variance.tsv.gz;data/source_tables/T37_enterotype_pcoa_coordinates.tsv.gz	Figure 5C — global feces enterotype PCoA from T37.	Adopted PAM; full-group median/IQR; seeded point display subset
-fig05	D	R/figures/fig05/panel_D_driver_boxplots.R	data/source_tables/T38_enterotype_driver_taxon_relative_abundance.tsv.gz	Figure 5D — top driver taxon abundances by global feces enterotype from T38.	Saved results; deterministic plotting
-fig05	E	R/figures/fig05/panel_E_stage_composition.R	data/source_tables/T11_sample_level_alpha_diversity.tsv.gz;data/source_tables/T37_enterotype_pcoa_coordinates.tsv.gz	Figure 5E — enterotype composition across growth stages (global feces PAM from T37/T34).	Saved results; deterministic plotting
-fig05	F,G,H,I	R/figures/fig05/panel_FGHI_stage_enterotype.R	data/source_tables/T37_enterotype_pcoa_axis_variance.tsv.gz;data/source_tables/T37_enterotype_pcoa_coordinates.tsv.gz	Figure 5F–I — stage-specific feces enterotype PCoA panels from T37.	Adopted PAM; full-group median/IQR; seeded point display subset
-figS01	A	R/figures/figS01/panel_A_cumulative_strategy.R	data/source_tables/T39_cumulative_samples_by_library_strategy.tsv.gz	Figure S1A — cumulative samples over time by LibraryStrategy (from SraRunInfo).	Saved results; deterministic plotting
-figS01	B	R/figures/figS01/panel_B_project_size.R	data/source_tables/T40_samples_per_bioproject.tsv.gz	panel_B_project_size	Saved results; deterministic plotting
-figS01	C	R/figures/figS01/panel_C_effect_size.R	data/source_tables/T15_technical_factor_effects_shannon.tsv.gz	Figure S1C — technical-factor Cohen's f on Shannon from T15.	Saved results; deterministic plotting
-figS01	D	R/figures/figS01/panel_D_amplicon_heatmap.R	data/source_tables/T18_amplicon_region_genus_mixed_model_results.tsv.gz	Figure S1D — amplicon-region genus LMM effect heatmap from T18.	Saved results; deterministic plotting
-figS02	A	R/figures/figS02/panel_A_dbi.R	data/plot_inputs/Fig1_DBI_source_data.tsv.gz;data/source_tables/T26_davies_bouldin_permutation_results.tsv.gz	Figure S2A — null-calibrated DBI comparison from T26 + Fig1_DBI_source_data.tsv.	Saved results; deterministic plotting
-figS02	B	R/figures/figS02/panel_B_rf_auc.R	data/plot_inputs/Fig2_RF_AUC_source_data.tsv.gz	Figure S2B — RF AUC lollipops from Fig2_RF_AUC_source_data.tsv (also in T24).	Saved results; deterministic plotting
-figS02	C	R/figures/figS02/panel_C_signature_matrix.R	data/plot_inputs/Fig3_Signature_source_data.tsv.gz	Figure S2C — country signature abundance/importance matrix.	Complete exported 85-taxon matrix by default; display selection scope documented
-figS03	A	R/figures/figS03/panel_A_freqpoly.R	data/plot_inputs/Task5_phylum_abundance_freqpoly_input_source.tsv.gz	Figure S3A — phylum relative-abundance frequency polygons by continent.	Saved results; deterministic plotting
-figS03	B	R/figures/figS03/panel_B_stacked_hybrid.R	data/plot_inputs/exact_hybrid_phylum_panel_source.tsv.gz	Figure S3B — hybrid per-sample stacked phylum composition by continent.	Saved results; deterministic plotting
-figS04	A	R/figures/figS04/panel_A_pcoa.R	data/source_tables/T22_pcoa_coordinates.tsv.gz	Figure S4A — China breed PCoA from T22 (Commercial / Crossbred / Indigenous).	Saved results; deterministic plotting
-figS04	B	R/figures/figS04/panel_B_lefse.R	data/source_tables/T43_figS04B_lefse_combo_right.tsv.gz	Figure S4B — China breed LEfSe |LDA|>=3.5 bar + abundance bubble.	Saved results; deterministic plotting
+fig01	A	R/figures/fig01/panel_A_world_map.R	data/fig01/Figure1A_country_sample_counts.tsv.gz	Figure 1A — world sample-count choropleth	
+fig01	B	R/figures/fig01/panel_B_read_density.R	data/fig01/Figure1B_read_counts.tsv.gz	Figure 1B — read-count density.	
+fig01	C	R/figures/fig01/panel_C_shannon.R	data/shared/sample_diversity_metadata.tsv.gz	Figure 1C — Shannon histogram + density	
+fig01	D,E,F,G	R/figures/fig01/panel_DEFG_rank_dual_axis.R	data/fig01/Figure1DEFG_abundance_prevalence.tsv.gz	Figure 1D–G — rank top-10 prevalence/abundance dual-axis panels	
+fig01	H	R/figures/fig01/panel_H_rarefaction.R	data/fig01/Figure1H_taxon_accumulation.tsv.gz	Figure 1H — taxonomic accumulation curves	
+fig01	I	R/figures/fig01/panel_I_core_scatter.R	data/fig01/Figure1I_taxonomic_composition.tsv.gz;data/fig01/Figure1I_core_taxa.tsv.gz	Figure 1I — core genera scatter	
+fig02	A	R/figures/fig02/panel_A_sample_counts.R	data/shared/sample_diversity_metadata.tsv.gz	Figure 2A — continent sample counts	
+fig02	B	R/figures/fig02/panel_B_shannon.R	data/shared/sample_diversity_metadata.tsv.gz	Figure 2B — continent Shannon violin	
+fig02	C	R/figures/fig02/panel_C_pcoa.R	data/shared/community_pcoa_coordinates.tsv.gz	Figure 2C — continent Bray-Curtis PCoA density + IQR crosshairs	
+fig02	D	R/figures/fig02/panel_D_signatures.R	data/fig02/Figure2D_taxon_signatures.tsv.gz;data/fig02/Figure2D_abundance_prevalence.tsv.gz	Figure 2D — continent taxon signatures and abundance/prevalence.	
+fig03	A,B,C	R/figures/fig03/panel_ABC_networks.R	data/fig03/Figure3ABC_network_edges.tsv.gz;data/fig03/Figure3ABC_network_nodes.tsv.gz	Figure 3A–C — continent-specific co-abundance networks.	
+fig03	D	R/figures/fig03/panel_D_discovery.R	data/fig03/Figure3D_taxon_discovery.tsv.gz	Figure 3D — continent taxon discovery curves	
+fig03	E	R/figures/fig03/panel_E_unidentified.R	data/fig03/Figure3E_unidentified_taxa.tsv.gz	Figure 3E — unidentified taxa by rank × continent	
+fig03	F	R/figures/fig03/panel_F_summary.R	data/fig03/Figure3F_network_metrics.tsv.gz	Figure 3F — continental network summary bubble matrix.	
+fig04	A	R/figures/fig04/panel_A_breed_map.R	data/fig04/Figure4A_breed_locations.tsv;data/fig04/Figure4A_map.geojson	Figure 4A — distribution and sample counts of Chinese pig breeds.	Map: Alibaba DataV.GeoAtlas
+fig04	B	R/figures/fig04/panel_B_group_counts.R	data/shared/sample_diversity_metadata.tsv.gz	Figure 4B — China breed-group sample counts (Commercial / Crossbred / Indigenous).	
+fig04	C	R/figures/fig04/panel_C_shannon.R	data/shared/sample_diversity_metadata.tsv.gz;data/fig04/Figure4C_wilcoxon_comparisons.tsv.gz	Figure 4C — China breed Shannon: violin + slim box + median + BH Wilcoxon stars.	
+fig04	D,E,F	R/figures/fig04/panel_DEF_networks.R	data/shared/taxonomy_dictionary.tsv.gz;data/fig04/Figure4DEF_network_edges.tsv.gz;data/fig04/Figure4DEF_network_nodes.tsv.gz	Figure 4D–F — China breed-specific co-abundance networks.	
+fig04	G	R/figures/fig04/panel_G_ancombc_bubble.R	data/fig04/Figure4G_abundance_effects.tsv.gz	Figure 4G — China breed one-vs-all ANCOM-BC2 abundance bubble.	Size: mean relative abundance (%); colour: OVA LFC; marks: supplied robust_sig
+fig05	A	R/figures/fig05/panel_A_gut_shannon.R	data/shared/sample_diversity_metadata.tsv.gz	Figure 5A — gut-site Shannon	
+fig05	B	R/figures/fig05/panel_B_gut_pcoa_ridges.R	data/shared/community_pcoa_coordinates.tsv.gz	Figure 5B — gut-site PCoA ridgelines	
+fig05	C	R/figures/fig05/panel_C_global_enterotype_pcoa.R	data/fig05/Figure5CFGHI_axis_variance.tsv.gz;data/fig05/Figure5CEFGHI_enterotype_coordinates.tsv.gz	Figure 5C — global feces enterotype PCoA	Adopted PAM; full-group median/IQR; seeded point display subset
+fig05	D	R/figures/fig05/panel_D_driver_boxplots.R	data/fig05/Figure5D_driver_abundance.tsv.gz	Figure 5D — top driver taxon abundances by global feces enterotype	
+fig05	E	R/figures/fig05/panel_E_stage_composition.R	data/shared/sample_diversity_metadata.tsv.gz;data/fig05/Figure5CEFGHI_enterotype_coordinates.tsv.gz	Figure 5E — enterotype composition across growth stages.	
+fig05	F,G,H,I	R/figures/fig05/panel_FGHI_stage_enterotype.R	data/fig05/Figure5CFGHI_axis_variance.tsv.gz;data/fig05/Figure5CEFGHI_enterotype_coordinates.tsv.gz	Figure 5F–I — stage-specific feces enterotype PCoA panels	Adopted PAM; full-group median/IQR; seeded point display subset
+figS01	A	R/figures/figS01/panel_A_cumulative_strategy.R	data/figS01/FigureS1A_cumulative_samples.tsv.gz	Figure S1A — cumulative samples over time by LibraryStrategy (from SraRunInfo).	
+figS01	B	R/figures/figS01/panel_B_project_size.R	data/figS01/FigureS1B_project_sample_counts.tsv.gz	Figure S1B — samples per BioProject.	
+figS01	C	R/figures/figS01/panel_C_effect_size.R	data/figS01/FigureS1C_technical_effects.tsv.gz	Figure S1C — technical-factor Cohen's f on Shannon	
+figS01	D	R/figures/figS01/panel_D_amplicon_heatmap.R	data/figS01/FigureS1D_amplicon_effects.tsv.gz	Figure S1D — amplicon-region genus LMM effect heatmap	
+figS02	A	R/figures/figS02/panel_A_dbi.R	data/figS02/FigureS2A_dbi_summary.tsv.gz;data/figS02/FigureS2A_dbi_permutations.tsv.gz	Figure S2A — null-calibrated DBI comparison	
+figS02	B	R/figures/figS02/panel_B_rf_auc.R	data/figS02/FigureS2B_rf_auc.tsv.gz	Figure S2B — RF AUC lollipops	
+figS02	C	R/figures/figS02/panel_C_signature_matrix.R	data/figS02/FigureS2C_country_signatures.tsv.gz	Figure S2C — country signature abundance/importance matrix.	Complete exported 85-taxon matrix by default; display selection scope documented
+figS03	A	R/figures/figS03/panel_A_freqpoly.R	data/figS03/FigureS3A_phylum_distribution.tsv.gz	Figure S3A — phylum relative-abundance frequency polygons by continent.	
+figS03	B	R/figures/figS03/panel_B_stacked_hybrid.R	data/figS03/FigureS3B_phylum_composition.tsv.gz	Figure S3B — hybrid per-sample stacked phylum composition by continent.	
+figS04	A	R/figures/figS04/panel_A_pcoa.R	data/shared/community_pcoa_coordinates.tsv.gz	Figure S4A — China breed PCoA	
+figS04	B	R/figures/figS04/panel_B_lefse.R	data/figS04/FigureS4B_lefse_abundance.tsv.gz	Figure S4B — China breed LEfSe |LDA|>=3.5 bar + abundance bubble.	

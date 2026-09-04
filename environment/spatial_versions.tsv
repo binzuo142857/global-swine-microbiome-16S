@@ -1,0 +1,7 @@
+Component	Version
+GEOS	3.13.0
+GDAL	3.10.1
+proj.4	9.5.1
+GDAL_with_GEOS	true
+USE_PROJ_H	true
+PROJ	9.5.1

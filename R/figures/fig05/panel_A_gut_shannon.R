@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5A — gut-site Shannon from T11.
+# Figure 5A — gut-site Shannon.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -15,7 +15,7 @@ gut_cols <- c(
   cecum = "#E15759", colon = "#B07AA1", feces = "#6B6B6B"
 )
 
-df <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+df <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   mutate(gut_region = tolower(as.character(gut_region))) %>%
   filter(gut_region %in% gut_order, !is.na(Shannon_index)) %>%

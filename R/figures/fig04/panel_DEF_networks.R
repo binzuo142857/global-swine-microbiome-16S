@@ -17,7 +17,7 @@ source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 source(file.path(REPO_ROOT, "R", "common", "taxonomy_map.R"))
 
-version_tag <- "corrected_adopted"
+version_tag <- "breed"
 
 phylum_cols <- c(
   Firmicutes = "#CAB2D6", Bacteroidota = "#1F78B4", Proteobacteria = "#33A02C",
@@ -26,7 +26,7 @@ phylum_cols <- c(
 genus_map <- load_genus_phylum_map()
 
 
-  edges <- read_source_table(file.path(PLOT_INPUTS, "china_breed_corrected_displayed_edges.tsv.gz")) %>%
+  edges <- read_source_table(file.path(DATA_DIR, "fig04/Figure4DEF_network_edges.tsv.gz")) %>%
     as_tibble() %>%
     transmute(
       breed_group = as.character(breed_group),
@@ -35,7 +35,7 @@ genus_map <- load_genus_phylum_map()
       correlation = as.numeric(correlation),
       sign = as.character(sign)
     )
-  nodes <- read_source_table(file.path(PLOT_INPUTS, "china_breed_corrected_displayed_nodes.tsv.gz")) %>%
+  nodes <- read_source_table(file.path(DATA_DIR, "fig04/Figure4DEF_network_nodes.tsv.gz")) %>%
     as_tibble() %>%
     transmute(
       breed_group = as.character(breed_group),
@@ -73,7 +73,7 @@ make_one <- function(bg) {
       select(-any_of("Phylum_edge"))
   }
 
-  # T09 genus map for remaining gaps (audited; ambiguous → Other).
+  # source table genus map for remaining gaps (audited; ambiguous → Other).
   need <- is.na(v$Phylum) | !nzchar(v$Phylum)
   if (any(need)) {
     v$Phylum[need] <- map_taxon_to_phylum(v$name[need], genus_map, allowed = names(phylum_cols))

@@ -1,7 +1,7 @@
-# Auditable genus / taxon-label → phylum map from T09 (+ optional edge phylum cols).
+# Auditable genus / taxon-label → phylum map (+ optional edge phylum cols).
 
 load_genus_phylum_map <- function() {
-  t09 <- read_source_table(source_table("T09_taxonomy_dictionary.tsv.gz")) %>%
+  t09 <- read_source_table(data_file("shared/taxonomy_dictionary.tsv.gz")) %>%
     as_tibble() %>%
     transmute(
       genus = as.character(genus),

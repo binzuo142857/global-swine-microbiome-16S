@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 # Figure 4G — China breed one-vs-all ANCOM-BC2 abundance bubble.
 # Source: publication OVA plotting table (Mean_Abund + LFC + robust stars).
-# Does NOT use pairwise T31 (Mean_Abundance empty; wrong contrast semantics).
+# Does NOT use pairwise source table (Mean_Abundance empty; wrong contrast semantics).
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-ova_src <- source_table("T42_fig04G_ova_abundance_bubble.tsv.gz")
+ova_src <- data_file("fig04/Figure4G_abundance_effects.tsv.gz")
 
 plot_df <- read_tsv(ova_src, show_col_types = FALSE) %>%
   mutate(

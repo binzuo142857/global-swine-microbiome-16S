@@ -12,8 +12,8 @@ source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
 src <- require_file(
-  file.path(PLOT_INPUTS, "Task5_phylum_abundance_freqpoly_input_source.tsv.gz"),
-  "Task5_phylum_abundance_freqpoly_input_source.tsv.gz"
+  file.path(DATA_DIR, "figS03/FigureS3A_phylum_distribution.tsv.gz"),
+  "figS03/FigureS3A_phylum_distribution.tsv.gz"
 )
 df <- read_source_table(src) %>%
   as_tibble() %>%

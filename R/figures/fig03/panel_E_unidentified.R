@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 3E — unidentified taxa by rank × continent from T36.
+# Figure 3E — unidentified taxa by rank × continent.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-src <- file.path(SOURCE_TABLES, "T36_unidentified_taxa_by_continent_rank.tsv.gz")
+src <- file.path(DATA_DIR, "fig03/Figure3E_unidentified_taxa.tsv.gz")
 unid <- if (grepl("\\.xlsx$", src)) read_source_table(src) %>% as_tibble() else read_tsv(src, show_col_types = FALSE)
 
 unid_data <- unid %>%

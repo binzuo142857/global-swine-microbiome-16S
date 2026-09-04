@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 1A — world sample-count choropleth from T10.
+# Figure 1A — world sample-count choropleth.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-t10 <- read_source_table(source_table("T10_geographic_sample_counts.tsv.gz")) %>%
+t10 <- read_source_table(data_file("fig01/Figure1A_country_sample_counts.tsv.gz")) %>%
   as_tibble() %>%
   transmute(
     region = recode(as.character(country), Czech = "Czech Republic", `Northern Ireland` = "UK"),

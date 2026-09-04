@@ -14,7 +14,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-net_ver <- "canonical_corrected"
+net_ver <- "continental"
 
 phylum_cols <- c(
   Firmicutes = "#CAB2D6", Bacteroidota = "#1F78B4", Proteobacteria = "#33A02C",
@@ -22,7 +22,7 @@ phylum_cols <- c(
 )
 
 
-  edges <- read_source_table(file.path(PLOT_INPUTS, "corrected_continental_network_edges.tsv.gz")) %>%
+  edges <- read_source_table(file.path(DATA_DIR, "fig03/Figure3ABC_network_edges.tsv.gz")) %>%
     as_tibble() %>%
     transmute(
       continent = as.character(continent),
@@ -32,7 +32,7 @@ phylum_cols <- c(
       sign = as.character(sign)
     ) %>%
     filter(continent %in% c("Asia", "Europe", "North America"), abs(correlation) > 0.20)
-  nodes_raw <- read_source_table(file.path(PLOT_INPUTS, "corrected_continental_network_nodes.tsv.gz")) %>%
+  nodes_raw <- read_source_table(file.path(DATA_DIR, "fig03/Figure3ABC_network_nodes.tsv.gz")) %>%
     as_tibble()
   nodes_lookup <- nodes_raw %>%
     transmute(

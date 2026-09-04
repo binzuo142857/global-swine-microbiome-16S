@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 2A — continent sample counts from T11.
+# Figure 2A — continent sample counts.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-count_data <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+count_data <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   filter(continent %in% CONTINENT_ORDER) %>%
   count(continent, name = "sample_count") %>%

@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure S4A — China breed PCoA from T22 (Commercial / Crossbred / Indigenous).
+# Figure S4A — China breed PCoA (Commercial / Crossbred / Indigenous).
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-pcoa <- read_tsv(require_file(source_table("T22_pcoa_coordinates.tsv.gz")), show_col_types = FALSE)
+pcoa <- read_tsv(require_file(data_file("shared/community_pcoa_coordinates.tsv.gz")), show_col_types = FALSE)
 
 # Harmonize IDs / breed column.
 if (!"breed_type" %in% names(pcoa) && "breed" %in% names(pcoa)) {

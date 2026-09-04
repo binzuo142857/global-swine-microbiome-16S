@@ -10,10 +10,10 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-net_ver <- "canonical_corrected"
+net_ver <- "continental"
 
 
-  src <- require_file(file.path(PLOT_INPUTS, "corrected_continental_network_summary.tsv.gz"))
+  src <- require_file(file.path(DATA_DIR, "fig03/Figure3F_network_metrics.tsv.gz"))
   summ <- read_source_table(src) %>% as_tibble()
 
 

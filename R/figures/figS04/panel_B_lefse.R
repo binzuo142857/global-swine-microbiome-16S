@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-combo_path <- source_table("T43_figS04B_lefse_combo_right.tsv.gz")
+combo_path <- data_file("figS04/FigureS4B_lefse_abundance.tsv.gz")
 
 combo <- read_tsv(combo_path, show_col_types = FALSE) %>%
   mutate(

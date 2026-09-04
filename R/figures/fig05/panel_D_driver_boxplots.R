@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5D — top driver taxon abundances by global feces enterotype from T38.
+# Figure 5D — top driver taxon abundances by global feces enterotype.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
 box_df <- read_tsv(
-  file.path(SOURCE_TABLES, "T38_enterotype_driver_taxon_relative_abundance.tsv.gz"),
+  file.path(DATA_DIR, "fig05/Figure5D_driver_abundance.tsv.gz"),
   show_col_types = FALSE
 ) %>%
   mutate(

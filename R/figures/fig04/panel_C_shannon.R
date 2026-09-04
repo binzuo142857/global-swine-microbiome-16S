@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-alpha <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+alpha <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   filter(country == "China", breed_type %in% BREED_ORDER_SOURCE, !is.na(Shannon_index)) %>%
   transmute(
@@ -31,7 +31,7 @@ significance_label <- function(p_adj) {
 }
 
 group_levels <- levels(alpha$breed_type)
-frozen_tests <- plot_input("fig04_panel_C_shannon_wilcoxon_bh.tsv.gz")
+frozen_tests <- data_file("fig04/Figure4C_wilcoxon_comparisons.tsv.gz")
 if (!file.exists(frozen_tests)) stop("Missing saved pairwise test results: ", frozen_tests)
 pairwise <- read_tsv(frozen_tests, show_col_types = FALSE) %>%
   mutate(y1 = match(group1, group_levels), y2 = match(group2, group_levels), span = abs(y2 - y1))

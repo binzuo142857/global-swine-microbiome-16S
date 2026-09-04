@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5F–I — stage-specific feces enterotype PCoA panels from T37.
+# Figure 5F–I — stage-specific feces enterotype PCoA panels.
 
 suppressPackageStartupMessages({
   library(tidyverse)

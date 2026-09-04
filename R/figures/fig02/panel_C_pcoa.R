@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 2C — continent Bray-Curtis PCoA density + IQR crosshairs from T22.
+# Figure 2C — continent Bray-Curtis PCoA density + IQR crosshairs.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-df <- read_tsv(require_file(source_table("T22_pcoa_coordinates.tsv.gz")), show_col_types = FALSE) %>%
+df <- read_tsv(require_file(data_file("shared/community_pcoa_coordinates.tsv.gz")), show_col_types = FALSE) %>%
   filter(continent %in% CONTINENT_ORDER) %>%
   transmute(
     continent = factor(as.character(continent), levels = CONTINENT_ORDER),

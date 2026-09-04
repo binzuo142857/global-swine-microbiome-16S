@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 1D–G — rank top-10 prevalence/abundance dual-axis panels from Task4.
+# Figure 1D–G — rank top-10 prevalence/abundance dual-axis panels from the abundance/prevalence table.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -12,8 +12,8 @@ source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
 task4 <- require_file(
-  file.path(PLOT_INPUTS, "Task4_overview_dual_axis_top10_source.tsv.gz"),
-  "Task4_overview_dual_axis_top10_source.tsv.gz"
+  file.path(DATA_DIR, "fig01/Figure1DEFG_abundance_prevalence.tsv.gz"),
+  "fig01/Figure1DEFG_abundance_prevalence.tsv.gz"
 )
 rank_summary <- read_source_table(task4) %>%
   as_tibble() %>%

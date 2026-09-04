@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5B — gut-site PCoA ridgelines from T22.
+# Figure 5B — gut-site PCoA ridgelines.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -17,7 +17,7 @@ gut_cols <- c(
   cecum = "#E15759", colon = "#B07AA1", feces = "#6B6B6B"
 )
 
-df <- read_tsv(require_file(source_table("T22_pcoa_coordinates.tsv.gz")), show_col_types = FALSE) %>%
+df <- read_tsv(require_file(data_file("shared/community_pcoa_coordinates.tsv.gz")), show_col_types = FALSE) %>%
   mutate(gut_region = tolower(as.character(gut_region))) %>%
   filter(gut_region %in% gut_order) %>%
   transmute(

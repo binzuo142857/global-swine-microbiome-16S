@@ -8,7 +8,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-proj <- read_tsv(source_table("T40_samples_per_bioproject.tsv.gz"), show_col_types = FALSE)
+proj <- read_tsv(data_file("figS01/FigureS1B_project_sample_counts.tsv.gz"), show_col_types = FALSE)
 
 med_proj <- median(proj$Sample_Count)
 long_tail <- proj %>% filter(Sample_Count > quantile(Sample_Count, 0.99))

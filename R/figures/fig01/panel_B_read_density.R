@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-stats_path <- plot_input("fig01B_sample_read_counts.tsv.gz")
+stats_path <- data_file("fig01/Figure1B_read_counts.tsv.gz")
 
 stats_raw <- read_tsv(stats_path, show_col_types = FALSE)
 plot_data_long <- stats_raw %>%

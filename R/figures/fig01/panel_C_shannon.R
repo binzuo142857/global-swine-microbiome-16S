@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 1C — Shannon histogram + density from T11.
+# Figure 1C — Shannon histogram + density.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-shannon_data <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+shannon_data <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   transmute(shannon_entropy = as.numeric(Shannon_index)) %>%
   filter(!is.na(shannon_entropy))

@@ -1,14 +1,14 @@
 #!/usr/bin/env Rscript
-# Shared helper: enterotype PCoA panel from T37.
+# Shared helper: enterotype PCoA panel.
 
 make_enterotype_pcoa <- function(scope, title, max_per_group = 900, title_size = S_TITLE,
                                  palette = NULL) {
   coords <- read_tsv(
-    file.path(SOURCE_TABLES, "T37_enterotype_pcoa_coordinates.tsv.gz"),
+    file.path(DATA_DIR, "fig05/Figure5CEFGHI_enterotype_coordinates.tsv.gz"),
     show_col_types = FALSE
   ) %>% filter(analysis_scope == scope)
   vars <- read_tsv(
-    file.path(SOURCE_TABLES, "T37_enterotype_pcoa_axis_variance.tsv.gz"),
+    file.path(DATA_DIR, "fig05/Figure5CFGHI_axis_variance.tsv.gz"),
     show_col_types = FALSE
   ) %>% filter(analysis_scope == scope)
 

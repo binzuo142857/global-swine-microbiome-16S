@@ -12,3 +12,4 @@
 *.gz -text
 *.xlsx -text
 *.rds -text
+*.geojson -text

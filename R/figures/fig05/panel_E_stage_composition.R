@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 5E — enterotype composition across growth stages (global feces PAM from T37/T34).
+# Figure 5E — enterotype composition across growth stages (global feces PAM).
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,15 +9,15 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-# Prefer joining global enterotype labels from T37 with growth_stage from T11/T34.
+# Prefer joining global enterotype labels with growth_stage.
 coords <- read_tsv(
-  file.path(SOURCE_TABLES, "T37_enterotype_pcoa_coordinates.tsv.gz"),
+  file.path(DATA_DIR, "fig05/Figure5CEFGHI_enterotype_coordinates.tsv.gz"),
   show_col_types = FALSE
 ) %>%
   filter(analysis_scope == "global_feces") %>%
   transmute(sample_id = as.character(sample_id), enterotype = as.character(enterotype))
 
-meta <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+meta <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   transmute(
     sample_id = as.character(sample_id),

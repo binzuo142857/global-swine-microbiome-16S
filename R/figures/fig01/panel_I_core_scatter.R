@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 1I — core genera scatter from T12 (genus) + T13 (core list).
+# Figure 1I — core genera scatter (genus) + source table (core list).
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-g_sum <- read_source_table(source_table("T12_global_taxonomic_composition_summary.tsv.gz")) %>%
+g_sum <- read_source_table(data_file("fig01/Figure1I_taxonomic_composition.tsv.gz")) %>%
   as_tibble() %>%
   filter(rank == "Genus") %>%
   transmute(
@@ -21,7 +21,7 @@ g_sum <- read_source_table(source_table("T12_global_taxonomic_composition_summar
   ) %>%
   filter(!is.na(Label), MeanAbundance_pct > 0)
 
-core_genera <- read_source_table(source_table("T13_global_core_taxa.tsv.gz")) %>%
+core_genera <- read_source_table(data_file("fig01/Figure1I_core_taxa.tsv.gz")) %>%
   as_tibble() %>%
   pull(genus) %>%
   unique()

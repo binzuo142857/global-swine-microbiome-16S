@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 3D — continent taxon discovery curves from T35.
+# Figure 3D — continent taxon discovery curves.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-src <- file.path(SOURCE_TABLES, "T35_taxon_discovery_by_continent.tsv.gz")
+src <- file.path(DATA_DIR, "fig03/Figure3D_taxon_discovery.tsv.gz")
 disc_data <- if (grepl("\\.xlsx$", src)) {
   read_source_table(src) %>% as_tibble()
 } else {

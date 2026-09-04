@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure S2A — null-calibrated DBI comparison from T26 + Fig1_DBI_source_data.tsv.
+# Figure S2A — null-calibrated DBI comparison + Fig1_DBI_source_data.tsv.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-dbi_path <- plot_input("Fig1_DBI_source_data.tsv.gz")
+dbi_path <- data_file("figS02/FigureS2A_dbi_summary.tsv.gz")
 
 dbi_stats <- read_tsv(
   require_file(dbi_path, "Fig1_DBI_source_data.tsv"),
@@ -17,7 +17,7 @@ dbi_stats <- read_tsv(
 ) %>%
   mutate(scale = factor(scale, levels = c("Continent", "Country")))
 
-t26 <- read_source_table(source_table("T26_davies_bouldin_permutation_results.tsv.gz")) %>%
+t26 <- read_source_table(data_file("figS02/FigureS2A_dbi_permutations.tsv.gz")) %>%
   as_tibble() %>%
   transmute(
     geographic_level = as.character(geographic_level),

@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-counts <- read_source_table(source_table("T11_sample_level_alpha_diversity.tsv.gz")) %>%
+counts <- read_source_table(data_file("shared/sample_diversity_metadata.tsv.gz")) %>%
   as_tibble() %>%
   filter(country == "China", breed_type %in% BREED_ORDER_SOURCE) %>%
   count(breed_type, name = "sample_count") %>%

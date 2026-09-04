@@ -13,8 +13,8 @@ source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
 src <- require_file(
-  file.path(PLOT_INPUTS, "exact_hybrid_phylum_panel_source.tsv.gz"),
-  "exact_hybrid_phylum_panel_source.tsv.gz"
+  file.path(DATA_DIR, "figS03/FigureS3B_phylum_composition.tsv.gz"),
+  "figS03/FigureS3B_phylum_composition.tsv.gz"
 )
 raw <- read_source_table(src) %>% as_tibble()
 df <- raw %>%

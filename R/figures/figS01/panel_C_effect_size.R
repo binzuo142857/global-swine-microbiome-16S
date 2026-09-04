@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure S1C — technical-factor Cohen's f on Shannon from T15.
+# Figure S1C — technical-factor Cohen's f on Shannon.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-t15 <- read_source_table(source_table("T15_technical_factor_effects_shannon.tsv.gz")) %>%
+t15 <- read_source_table(data_file("figS01/FigureS1C_technical_effects.tsv.gz")) %>%
   as_tibble() %>%
   transmute(
     Factor = as.character(Factor),

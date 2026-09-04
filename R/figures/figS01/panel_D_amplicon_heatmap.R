@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure S1D — amplicon-region genus LMM effect heatmap from T18.
+# Figure S1D — amplicon-region genus LMM effect heatmap.
 
 suppressPackageStartupMessages({
   library(tidyverse)
@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 source(file.path("R", "common", "paths.R"))
 source(file.path(REPO_ROOT, "R", "common", "theme.R"))
 
-t18 <- read_source_table(source_table("T18_amplicon_region_genus_mixed_model_results.tsv.gz")) %>%
+t18 <- read_source_table(data_file("figS01/FigureS1D_amplicon_effects.tsv.gz")) %>%
   as_tibble() %>%
   transmute(
     Taxon = coalesce(as.character(Genus_Label), as.character(Taxon)),

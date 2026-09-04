@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 # Figure 2D — continent signature composite, aligned to
 # plot_continent_signature_composite_v3.R layout (not pixel-identical).
-# Row set = resolved T23 integrated universe (core_concord2 logic).
+# Row set = resolved source table integrated universe (core_concord2 logic).
 # Support methods = ANCOM-BC2 + LEfSe + RF only; core is force-included.
 
 suppressPackageStartupMessages({
@@ -22,7 +22,7 @@ continent_colors <- CONTINENT_COLORS
 cont_abbr <- setNames(cont5, cont5)
 
 t23 <- read_source_table(
-  require_file(file.path(SOURCE_TABLES, "T23_Figure2D_integrated_signature_source.tsv.gz"))
+  require_file(file.path(DATA_DIR, "fig02/Figure2D_taxon_signatures.tsv.gz"))
 ) %>%
   as_tibble() %>%
   arrange(figure_display_order) %>%
@@ -31,7 +31,7 @@ t23 <- read_source_table(
     gkey_raw = as.character(coalesce(standard_taxon_key, figure_genus_label))
   )
 
-# Match v3 formal figure: abundance ordering within the fixed T23 universe.
+# Match v3 formal figure: abundance ordering within the fixed source table universe.
 gord <- t23 %>%
   arrange(desc(as.numeric(figure_order_mean_abundance_pct)), figure_display_order) %>%
   pull(gkey)
@@ -76,8 +76,8 @@ g_bar <- function(...) {
   )
 }
 
-# ---- Abund/Prev: prefer packable T41; else build from genus-summary and export ----
-t41 <- source_table("T41_fig02D_continent_abund_prev.tsv.gz")
+# ---- Abund/Prev: prefer packable source table; else build from genus-summary and export ----
+t41 <- data_file("fig02/Figure2D_abundance_prevalence.tsv.gz")
 t41_local <- t41
 
 
@@ -193,7 +193,7 @@ p4 <- ggplot(lefse, aes(continent, gkey)) +
 rf <- bind_rows(
   lapply(cont5, function(ct) {
     hit_col <- paste0("rf_hit_", gsub(" ", "_", ct))
-    # T23 uses North_America / South_America in column names
+    # source table uses North_America / South_America in column names
     hit_col <- dplyr::case_when(
       ct == "North America" ~ "rf_hit_North_America",
       ct == "South America" ~ "rf_hit_South_America",

@@ -1,12 +1,8 @@
 # Shared, repository-relative inputs. Run through scripts/render_figures.R.
 REPO_ROOT <- normalizePath(Sys.getenv("SWINE_REPO_ROOT", getwd()), winslash = "/", mustWork = TRUE)
-SOURCE_TABLES <- file.path(REPO_ROOT, "data", "source_tables")
-PLOT_INPUTS <- file.path(REPO_ROOT, "data", "plot_inputs")
-if (!dir.exists(SOURCE_TABLES) || !dir.exists(PLOT_INPUTS)) {
-  stop("Run Rscript scripts/render_figures.R from a complete repository checkout.")
-}
-source_table <- function(name) file.path(SOURCE_TABLES, name)
-plot_input <- function(name) file.path(PLOT_INPUTS, name)
+DATA_DIR <- file.path(REPO_ROOT, "data")
+if (!dir.exists(DATA_DIR)) stop("The repository data directory is missing.")
+data_file <- function(name) file.path(DATA_DIR, name)
 require_file <- function(path, label = basename(path)) {
   if (!file.exists(path)) stop("Missing required input: ", label, "\n", path, call. = FALSE)
   invisible(path)
