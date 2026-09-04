@@ -1,0 +1,27 @@
+# Generated figures and local run products
+/outputs/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.svg
+*.pdf
+*.log
+
+# Local runtime state
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*
+
+# Local credentials
+.env
+.env.*

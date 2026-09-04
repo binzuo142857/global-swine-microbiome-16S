@@ -1,0 +1,436 @@
+table	column	example
+T09_taxonomy_dictionary.tsv.gz	feature_id	d__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae;g__Lactobacillus
+T09_taxonomy_dictionary.tsv.gz	kingdom	Bacteria
+T09_taxonomy_dictionary.tsv.gz	phylum	Firmicutes
+T09_taxonomy_dictionary.tsv.gz	class	Bacilli
+T09_taxonomy_dictionary.tsv.gz	order	Lactobacillales
+T09_taxonomy_dictionary.tsv.gz	family	Lactobacillaceae
+T09_taxonomy_dictionary.tsv.gz	genus	Lactobacillus
+T09_taxonomy_dictionary.tsv.gz	deepest_classified_rank	genus
+T09_taxonomy_dictionary.tsv.gz	display_name	Lactobacillus
+T09_taxonomy_dictionary.tsv.gz	silva_identifier	
+T09_taxonomy_dictionary.tsv.gz	unclassified_status	False
+T09_taxonomy_dictionary.tsv.gz	mean_abundance_proportion	0.0806990602051153
+T10_geographic_sample_counts.tsv.gz	country	Australia
+T10_geographic_sample_counts.tsv.gz	continent	Oceania
+T10_geographic_sample_counts.tsv.gz	initial_runs	435
+T10_geographic_sample_counts.tsv.gz	initial_BioProject_count	3
+T10_geographic_sample_counts.tsv.gz	retained_samples	411
+T10_geographic_sample_counts.tsv.gz	retained_BioProject_count	2
+T10_geographic_sample_counts.tsv.gz	percentage_of_retained_compendium	0.7183430918465438
+T10_geographic_sample_counts.tsv.gz	map_longitude	
+T10_geographic_sample_counts.tsv.gz	map_latitude	
+T10_geographic_sample_counts.tsv.gz	coordinate_note	Map uses maps::map_data('world') polygons; no country centroid table was saved
+T11_sample_level_alpha_diversity.tsv.gz	sample_id	ERR1739902
+T11_sample_level_alpha_diversity.tsv.gz	Shannon_index	4.465212157479159
+T11_sample_level_alpha_diversity.tsv.gz	BioProject	PRJEB18070
+T11_sample_level_alpha_diversity.tsv.gz	country	Germany
+T11_sample_level_alpha_diversity.tsv.gz	continent	Europe
+T11_sample_level_alpha_diversity.tsv.gz	breed_type	commercial
+T11_sample_level_alpha_diversity.tsv.gz	growth_stage	finishing
+T11_sample_level_alpha_diversity.tsv.gz	gut_region	colon
+T12_global_taxonomic_composition_summary.tsv.gz	taxon	Firmicutes
+T12_global_taxonomic_composition_summary.tsv.gz	mean_abundance_pct	54.60755589718919
+T12_global_taxonomic_composition_summary.tsv.gz	sample_prevalence_pct	97.79117527808629
+T12_global_taxonomic_composition_summary.tsv.gz	sample_N	56727
+T12_global_taxonomic_composition_summary.tsv.gz	rank	Phylum
+T12_global_taxonomic_composition_summary.tsv.gz	median_abundance_pct	
+T12_global_taxonomic_composition_summary.tsv.gz	total_reads_or_features	
+T12_global_taxonomic_composition_summary.tsv.gz	classified_status	True
+T12_global_taxonomic_composition_summary.tsv.gz	plotting_order	1
+T13_global_core_taxa.tsv.gz	genus	Lactobacillus
+T13_global_core_taxa.tsv.gz	mean_abundance_pct	8.06990602051153
+T13_global_core_taxa.tsv.gz	SDAbundance_pct	13.85322258816466
+T13_global_core_taxa.tsv.gz	SE_abundance_pct	0.0581642194136408
+T13_global_core_taxa.tsv.gz	prevalence_pct	89.58168068115711
+T13_global_core_taxa.tsv.gz	TotalSamples	56727
+T13_global_core_taxa.tsv.gz	Level	Genus
+T13_global_core_taxa.tsv.gz	median_abundance_pct	
+T13_global_core_taxa.tsv.gz	detection_threshold	>0 relative abundance
+T13_global_core_taxa.tsv.gz	prevalence_threshold_pct	50
+T13_global_core_taxa.tsv.gz	abundance_threshold_pct	1
+T13_global_core_taxa.tsv.gz	core_status	True
+T15_technical_factor_effects_shannon.tsv.gz	Factor	Extraction Kit
+T15_technical_factor_effects_shannon.tsv.gz	Cohens_f	0.222067100796258
+T15_technical_factor_effects_shannon.tsv.gz	R_squared	0.0469962344772464
+T15_technical_factor_effects_shannon.tsv.gz	Num_Samples	54656
+T15_technical_factor_effects_shannon.tsv.gz	retained_level_count	16
+T15_technical_factor_effects_shannon.tsv.gz	excluded_levels	
+T15_technical_factor_effects_shannon.tsv.gz	model_formula	Shannon_index ~ factor(DNAisokit)
+T15_technical_factor_effects_shannon.tsv.gz	filtering_rule	drop missing levels and levels with n<=5
+T15_technical_factor_effects_shannon.tsv.gz	reference_group	none; omnibus model R-squared
+T15_technical_factor_effects_shannon.tsv.gz	uncertainty_or_statistical_test	No uncertainty interval or hypothesis test saved
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Taxon	d__Archaea;p__Euryarchaeota;c__Methanobacteria;o__Methanobacteriales;f__Methanobacteriaceae;g__Methanobrevibacter
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Amplicon	V4
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Estimate	0.4851227956978614
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	P_value	4.282543612032617e-08
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Q_value	2.826478783941527e-06
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Phylum	Euryarchaeota
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	Genus_Label	Methanobrevibacter
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	sample_count	19282
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	N	19282
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	SE	
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	test_statistic	
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	direction	higher in target amplicon
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	prevalence	
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	mean_abundance	
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	random_effects	(1|BioProject) + (1|continent)
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	model_formula	scaledCLR(taxon) ~ is_target_amplicon + (1|BioProject) + (1|continent)
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	transformation	count+1 -> CLR -> z-score
+T18_amplicon_region_genus_mixed_model_results.tsv.gz	adjustment_method	Benjamini-Hochberg across all 462 genus x amplicon tests
+T26_davies_bouldin_permutation_results.tsv.gz	geographic_level	continent
+T26_davies_bouldin_permutation_results.tsv.gz	permutation_id	0
+T26_davies_bouldin_permutation_results.tsv.gz	DBI	5.40075034649872
+T26_davies_bouldin_permutation_results.tsv.gz	observed_null_status	observed
+T26_davies_bouldin_permutation_results.tsv.gz	PCo_axes_used	PCo1-PCo6
+T26_davies_bouldin_permutation_results.tsv.gz	permutation_count	999
+T26_davies_bouldin_permutation_results.tsv.gz	empirical_P	0
+T26_davies_bouldin_permutation_results.tsv.gz	seed_status	seed not set
+T26_davies_bouldin_permutation_results.tsv.gz	method	clusterSim::index.DB; centroid; lower DBI is stronger
+T14_taxon_accumulation_discovery.tsv.gz	analysis_scope	global_sample_accumulation
+T14_taxon_accumulation_discovery.tsv.gz	continent	NA
+T14_taxon_accumulation_discovery.tsv.gz	taxonomic_rank	Phylum
+T14_taxon_accumulation_discovery.tsv.gz	sample_size	1
+T14_taxon_accumulation_discovery.tsv.gz	iteration_count	199
+T14_taxon_accumulation_discovery.tsv.gz	mean_cumulative_taxa	9.81407035175879
+T14_taxon_accumulation_discovery.tsv.gz	sd	4.04027739510161
+T14_taxon_accumulation_discovery.tsv.gz	lower_quantile	NA
+T14_taxon_accumulation_discovery.tsv.gz	upper_quantile	NA
+T14_taxon_accumulation_discovery.tsv.gz	read_normalized_discovery_rate	NA
+T14_taxon_accumulation_discovery.tsv.gz	seed_status	MASTER_SEED=123 plus rank offset
+T14_taxon_accumulation_discovery.tsv.gz	script_path	rarefaction_v5.R
+T22_pcoa_coordinates.tsv.gz	analysis_id	global_bray_curtis
+T22_pcoa_coordinates.tsv.gz	sampleid	ERR1739902
+T22_pcoa_coordinates.tsv.gz	PCo1	-0.221113173099469
+T22_pcoa_coordinates.tsv.gz	PCo2	0.170923587760187
+T22_pcoa_coordinates.tsv.gz	PCo3	-0.0789431603522752
+T22_pcoa_coordinates.tsv.gz	PCo4	-0.0414768917424526
+T22_pcoa_coordinates.tsv.gz	PCo5	0.0455190338624885
+T22_pcoa_coordinates.tsv.gz	PCo6	0.110989598956433
+T22_pcoa_coordinates.tsv.gz	PCo1_variance_pct	9.93115719876671
+T22_pcoa_coordinates.tsv.gz	PCo2_variance_pct	6.8227064644644
+T22_pcoa_coordinates.tsv.gz	PCo3_variance_pct	5.68303044551141
+T22_pcoa_coordinates.tsv.gz	PCo4_variance_pct	4.47990298358951
+T22_pcoa_coordinates.tsv.gz	PCo5_variance_pct	3.48159534034171
+T22_pcoa_coordinates.tsv.gz	PCo6_variance_pct	2.50772730133934
+T22_pcoa_coordinates.tsv.gz	Run	ERR1739902
+T22_pcoa_coordinates.tsv.gz	BioProject	PRJEB18070
+T22_pcoa_coordinates.tsv.gz	country	Germany
+T22_pcoa_coordinates.tsv.gz	continent	Europe
+T22_pcoa_coordinates.tsv.gz	breed	Pietrain
+T22_pcoa_coordinates.tsv.gz	breed_type	commercial
+T22_pcoa_coordinates.tsv.gz	growth_stage	finishing
+T22_pcoa_coordinates.tsv.gz	gut_region	colon
+T22_pcoa_coordinates.tsv.gz	X16sV	V1-V2
+T22_pcoa_coordinates.tsv.gz	DNAisokit	FastDNA
+T22_pcoa_coordinates.tsv.gz	Model	Illumina MiSeq
+T37_enterotype_pcoa_coordinates.tsv.gz	analysis_scope	global_feces
+T37_enterotype_pcoa_coordinates.tsv.gz	growth_stage	all_stages
+T37_enterotype_pcoa_coordinates.tsv.gz	selected_k	2
+T37_enterotype_pcoa_coordinates.tsv.gz	sample_id	SRR8870835
+T37_enterotype_pcoa_coordinates.tsv.gz	enterotype	1
+T37_enterotype_pcoa_coordinates.tsv.gz	PCo1	-0.18477969924201543
+T37_enterotype_pcoa_coordinates.tsv.gz	PCo2	0.06109558100374387
+T37_enterotype_pcoa_coordinates.tsv.gz	source_pcoa_rds	enterotype/feces/intermediate_pcoa_results_feces.rds
+T37_enterotype_pcoa_coordinates.tsv.gz	source_cluster_csv	enterotype/feces/PAM_k2_auto_3_SampleClusters.csv
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	sample_id	ERR9120463
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	taxon	d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae;g__Prevotella
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	relative_abundance	0
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	enterotype	2
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	analysis_scope	global_feces
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	selected_k	2
+T38_enterotype_driver_taxon_relative_abundance.tsv.gz	taxon_short	Prevotella
+T39_cumulative_samples_by_library_strategy.tsv.gz	ReleaseDate	2014-05-15
+T39_cumulative_samples_by_library_strategy.tsv.gz	LibraryStrategy	AMPLICON
+T39_cumulative_samples_by_library_strategy.tsv.gz	n	1
+T39_cumulative_samples_by_library_strategy.tsv.gz	cum_n	1
+T40_samples_per_bioproject.tsv.gz	BioProject	CNP0000828
+T40_samples_per_bioproject.tsv.gz	Sample_Count	293
+T41_fig02D_continent_abund_prev.tsv.gz	figure_genus_label	Lactobacillus
+T41_fig02D_continent_abund_prev.tsv.gz	matched_summary_label	Lactobacillus
+T41_fig02D_continent_abund_prev.tsv.gz	continent	Asia
+T41_fig02D_continent_abund_prev.tsv.gz	mean_abundance_pct	6.924863754176544
+T41_fig02D_continent_abund_prev.tsv.gz	prevalence_pct	88.56990014265335
+T42_fig04G_ova_abundance_bubble.tsv.gz	Target_Breed	commercial
+T42_fig04G_ova_abundance_bubble.tsv.gz	Resolved_ID	d__Bacteria;p__Spirochaetota;c__Spirochaetia;o__Spirochaetales;f__Spirochaetaceae;g__Sphaerochaeta
+T42_fig04G_ova_abundance_bubble.tsv.gz	display_taxon_unique	Sphaerochaeta
+T42_fig04G_ova_abundance_bubble.tsv.gz	Mean_Abund	0.17324795400336207
+T42_fig04G_ova_abundance_bubble.tsv.gz	one_vs_all_lfc_full	-1.947881751025797
+T42_fig04G_ova_abundance_bubble.tsv.gz	one_vs_all_q_full	0
+T42_fig04G_ova_abundance_bubble.tsv.gz	robust_sig	TRUE
+T42_fig04G_ova_abundance_bubble.tsv.gz	feature_id	Sphaerochaeta
+T42_fig04G_ova_abundance_bubble.tsv.gz	source_file	plotting_table_top20_union.csv
+T42_fig04G_ova_abundance_bubble.tsv.gz	quantity_notes	size=Mean_Abund (%); fill=one_vs_all_lfc_full; star=robust_sig; taxa=top20-per-breed union
+T43_figS04B_lefse_combo_right.tsv.gz	feature_id_full	d__Bacteria;p__Firmicutes;c__Clostridia;o__Monoglobales;f__Monoglobaceae;g__Monoglobus
+T43_figS04B_lefse_combo_right.tsv.gz	breed_type	commercial
+T43_figS04B_lefse_combo_right.tsv.gz	plot_label_ordered	Monoglobus
+T43_figS04B_lefse_combo_right.tsv.gz	enriched_breed_type	Local China
+T43_figS04B_lefse_combo_right.tsv.gz	abs_lda	3.523200810013208
+T43_figS04B_lefse_combo_right.tsv.gz	mean_abund	0.1998589746425266
+T43_figS04B_lefse_combo_right.tsv.gz	log_abund	-0.6990590989060167
+T43_figS04B_lefse_combo_right.tsv.gz	row_centered_log_abund	-0.06553420658979059
+T43_figS04B_lefse_combo_right.tsv.gz	row_scaled_log_abund	-0.1714481125882357
+T43_figS04B_lefse_combo_right.tsv.gz	highlight_cell	FALSE
+T35_taxon_discovery_by_continent.tsv.gz	continent	Europe
+T35_taxon_discovery_by_continent.tsv.gz	sample_size	1
+T35_taxon_discovery_by_continent.tsv.gz	mean_unique_taxa	87.527
+T35_taxon_discovery_by_continent.tsv.gz	source_cache	R_analysis_output/Global_Analysis_Plots/taxon_discovery_curve_data_logscale.rds
+T36_unidentified_taxa_by_continent_rank.tsv.gz	continent	Asia
+T36_unidentified_taxa_by_continent_rank.tsv.gz	taxonomic_rank	Class
+T36_unidentified_taxa_by_continent_rank.tsv.gz	mean_unidentified	0.4800403486316816
+T36_unidentified_taxa_by_continent_rank.tsv.gz	sd_unidentified	0.0021289612386523995
+T36_unidentified_taxa_by_continent_rank.tsv.gz	source_cache	R_analysis_output/Global_Analysis_Plots/unidentified_taxa_stats_continent.rds
+T37_enterotype_pcoa_axis_variance.tsv.gz	analysis_scope	global_feces
+T37_enterotype_pcoa_axis_variance.tsv.gz	growth_stage	all_stages
+T37_enterotype_pcoa_axis_variance.tsv.gz	selected_k	2
+T37_enterotype_pcoa_axis_variance.tsv.gz	PCo1_variance_fraction	0.2624451000489155
+T37_enterotype_pcoa_axis_variance.tsv.gz	PCo2_variance_fraction	0.18447330462635494
+T37_enterotype_pcoa_axis_variance.tsv.gz	variance_vector_length	35065
+T37_enterotype_pcoa_axis_variance.tsv.gz	source_pcoa_rds	enterotype/feces/intermediate_pcoa_results_feces.rds
+T23_Figure2D_integrated_signature_source.tsv.gz	figure_display_order	1
+T23_Figure2D_integrated_signature_source.tsv.gz	standard_taxon_key	Lactobacillus
+T23_Figure2D_integrated_signature_source.tsv.gz	figure_genus_label	Lactobacillus
+T23_Figure2D_integrated_signature_source.tsv.gz	figure_order_mean_abundance_pct	7.71322442159366
+T23_Figure2D_integrated_signature_source.tsv.gz	core_Asia	True
+T23_Figure2D_integrated_signature_source.tsv.gz	core_Europe	True
+T23_Figure2D_integrated_signature_source.tsv.gz	core_North_America	True
+T23_Figure2D_integrated_signature_source.tsv.gz	core_Oceania	False
+T23_Figure2D_integrated_signature_source.tsv.gz	core_South_America	True
+T23_Figure2D_integrated_signature_source.tsv.gz	core_any_continent	True
+T23_Figure2D_integrated_signature_source.tsv.gz	core_force_included	True
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_hit_Asia	False
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_lfc_Asia	-0.566542449028213
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_q_Asia	0.00499405169230199
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_enriched_in_Asia	non_Asia
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_hit_Europe	False
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_lfc_Europe	-0.830022385002406
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_q_Europe	0.000485412890917502
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_enriched_in_Europe	non_Europe
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_hit_North_America	False
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_lfc_North_America	0.96032201153986
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_q_North_America	0.000991311950564004
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_enriched_in_North_America	North America
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_any_hit	False
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_hit_Asia	False
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_abs_lda_Asia	3.89612320193358
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_hit_Europe	False
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_abs_lda_Europe	4.5786193256969
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_hit_North_America	True
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_abs_lda_North_America	4.36390871597904
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_any_hit	True
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_hit_Asia	False
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_Asia	0.0112208204832979
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_rank_Asia	7
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_colnorm_Asia	0.515851876154278
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_hit_Europe	False
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_Europe	0.0141355421405192
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_rank_Europe	6
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_colnorm_Europe	0.386087829047751
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_hit_North_America	False
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_North_America	0.0205012935014018
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_rank_North_America	2
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_colnorm_North_America	0.686957753730222
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_hit_Oceania	False
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_Oceania	1.11936923003595e-05
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_rank_Oceania	1
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_colnorm_Oceania	1
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_hit_South_America	False
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_South_America	0.000200690649704857
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_rank_South_America	4
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_importance_colnorm_South_America	0.757898797227017
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_any_hit	False
+T23_Figure2D_integrated_signature_source.tsv.gz	signature_support_count	1
+T23_Figure2D_integrated_signature_source.tsv.gz	supported_by_at_least_two_signature_methods	False
+T23_Figure2D_integrated_signature_source.tsv.gz	inclusion_category	core_force_included_only
+T23_Figure2D_integrated_signature_source.tsv.gz	final_core_included_n	28
+T23_Figure2D_integrated_signature_source.tsv.gz	final_noncore_signature_support_ge2_n	13
+T23_Figure2D_integrated_signature_source.tsv.gz	final_core_signature_support_overlap_n	14
+T23_Figure2D_integrated_signature_source.tsv.gz	final_unique_genus_n	41
+T23_Figure2D_integrated_signature_source.tsv.gz	inclusion_rule	all eligible core genera UNION non-core genera supported by >=2 of ANCOM-BC2, LEfSe and RF; core is not a support vote
+T23_Figure2D_integrated_signature_source.tsv.gz	continent_coverage_note	Core and RF display five continents; ANCOM-BC2 and LEfSe display Asia, Europe and North America only
+T23_Figure2D_integrated_signature_source.tsv.gz	table_status	READY
+T23_Figure2D_integrated_signature_source.tsv.gz	core_source_file	/home/binzuo/homefolder/global/R94/pre_abun/continent_core_scatter/all_continents_core_genera.tsv
+T23_Figure2D_integrated_signature_source.tsv.gz	core_source_timestamp	2026-04-16 15:34:54 +0800
+T23_Figure2D_integrated_signature_source.tsv.gz	core_generating_script	/home/binzuo/homefolder/global/R94/continent_core.R
+T23_Figure2D_integrated_signature_source.tsv.gz	core_threshold	continent prevalence >=50%; mean abundance >=1%
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_source_file	/home/binzuo/homefolder/global/R94/R_analysis_output/ancombc_continent_ova_model_compare/continent_robust_taxa_fixed_and_mixed.csv
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_source_timestamp	2026-04-14 13:57:14 +0800
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_generating_script	/home/binzuo/homefolder/global/R94/04_summarize_ancombc_continent_ova_models.R
+T23_Figure2D_integrated_signature_source.tsv.gz	ancombc2_threshold	fixed and mixed ANCOM-BC2 robust intersection; significant OVA rows; mixed-model LFC and q plotted
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_source_file	/home/binzuo/homefolder/global/R94/R_analysis_output/lefse_mm_continent_3way/results/lefse_layer2_strict_markers.tsv
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_source_timestamp	2026-04-18 04:05:43 +0800
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_generating_script	/home/binzuo/homefolder/global/R94/run_lefse_mm_3continent_multiclass_genus.R
+T23_Figure2D_integrated_signature_source.tsv.gz	lefse_threshold	run LDA cutoff 2.0; Figure display abs(LDA) >=3.5
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_source_file	/home/binzuo/homefolder/global/R94/R_analysis_output/Regional_Signatures_RF_v6/Regional_RF_Feature_Importance.csv
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_elbow_source_file	/home/binzuo/homefolder/global/R94/R_analysis_output/Regional_Signatures_RF_v6/Elbow_Analysis/Suggested_Top_N.csv
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_source_timestamp	2025-12-02 20:30:38 +0800
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_elbow_source_timestamp	2025-12-01 11:05:49 +0800
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_generating_script	/home/binzuo/homefolder/global/R94/calc_regional_signatures_RF.R; /home/binzuo/homefolder/global/R94/analyze_rf_importance_elbow.R
+T23_Figure2D_integrated_signature_source.tsv.gz	rf_threshold	Rank <= continent-specific Elbow_Rank
+T23_Figure2D_integrated_signature_source.tsv.gz	final_plotting_script	/home/binzuo/homefolder/global/R94/plot_continent_macro_composite.R
+T23_Figure2D_integrated_signature_source.tsv.gz	integration_script	/home/binzuo/homefolder/global/R94/plot_continent_signature_composite_v3.R
+T23_Figure2D_integrated_signature_source.tsv.gz	integration_code_location	plot_continent_macro_composite.R:446-451; plot_continent_signature_composite_v3.R:100-139,156-163,241-319
+corrected_continental_network_edges.tsv.gz	continent	Asia
+corrected_continental_network_edges.tsv.gz	taxon_1	Bacteroidales_RF16_group
+corrected_continental_network_edges.tsv.gz	taxon_2	Anaeroplasma
+corrected_continental_network_edges.tsv.gz	correlation	0.3337
+corrected_continental_network_edges.tsv.gz	empirical_P	0.001
+corrected_continental_network_edges.tsv.gz	sign	Positive
+corrected_continental_network_edges.tsv.gz	phylum_taxon_1	Bacteroidota
+corrected_continental_network_edges.tsv.gz	phylum_taxon_2	Firmicutes
+corrected_continental_network_edges.tsv.gz	significance_threshold	empirical P <= 0.001
+corrected_continental_network_edges.tsv.gz	specificity_rule	p_Ex > 0.001 OR abs(r_Ex) < 0.15
+corrected_continental_network_edges.tsv.gz	display_threshold	abs(r_In) > 0.20
+corrected_continental_network_nodes.tsv.gz	continent	Asia
+corrected_continental_network_nodes.tsv.gz	original_taxon_name	Actinobacillus
+corrected_continental_network_nodes.tsv.gz	display_label	Actinobacillus
+corrected_continental_network_nodes.tsv.gz	phylum	Proteobacteria
+corrected_continental_network_nodes.tsv.gz	plotted_color_group	Proteobacteria
+corrected_continental_network_nodes.tsv.gz	raw_abundance	179.341735663907
+corrected_continental_network_nodes.tsv.gz	relative_abundance_for_node_size	0.00817162698387193
+corrected_continental_network_nodes.tsv.gz	relative_abundance_denominator	sum raw abundance across full Include node_list
+corrected_continental_network_nodes.tsv.gz	total_degree	7
+corrected_continental_network_nodes.tsv.gz	positive_degree	7
+corrected_continental_network_nodes.tsv.gz	negative_degree	0
+corrected_continental_network_nodes.tsv.gz	incident_displayed_edges	7
+corrected_continental_network_nodes.tsv.gz	mean_abs_correlation	0.279642857142857
+corrected_continental_network_nodes.tsv.gz	min_abs_correlation	0.202
+corrected_continental_network_nodes.tsv.gz	max_abs_correlation	0.3716
+corrected_continental_network_nodes.tsv.gz	abundance_filter	mean relative abundance > 0.0005
+corrected_continental_network_nodes.tsv.gz	prevalence_filter	prevalence > 0.30
+corrected_continental_network_nodes.tsv.gz	significance_threshold	empirical P <= 0.001
+corrected_continental_network_nodes.tsv.gz	specificity_rule	p_Ex > 0.001 OR abs(r_Ex) < 0.15
+corrected_continental_network_nodes.tsv.gz	display_threshold	abs(r_In) > 0.20
+corrected_continental_network_summary.tsv.gz	continent	Asia
+corrected_continental_network_summary.tsv.gz	specific_edges	176
+corrected_continental_network_summary.tsv.gz	network_nodes	73
+corrected_continental_network_summary.tsv.gz	mean_degree	4.82191780821918
+china_breed_corrected_displayed_edges.tsv.gz	breed_group	Commercial
+china_breed_corrected_displayed_edges.tsv.gz	taxon_1	Actinobacillus
+china_breed_corrected_displayed_edges.tsv.gz	taxon_2	Acinetobacter
+china_breed_corrected_displayed_edges.tsv.gz	correlation	0.246
+china_breed_corrected_displayed_edges.tsv.gz	empirical_P	0.001
+china_breed_corrected_displayed_edges.tsv.gz	sign	Positive
+china_breed_corrected_displayed_edges.tsv.gz	significance_threshold	empirical P <= 0.001
+china_breed_corrected_displayed_edges.tsv.gz	specificity_rule	p_ex > 0.001 OR abs(r_ex) < 0.15
+china_breed_corrected_displayed_edges.tsv.gz	display_threshold	abs(r_in) > 0.20
+china_breed_corrected_displayed_nodes.tsv.gz	breed_group	Commercial
+china_breed_corrected_displayed_nodes.tsv.gz	taxon	Acinetobacter
+china_breed_corrected_displayed_nodes.tsv.gz	total_degree	6
+china_breed_corrected_displayed_nodes.tsv.gz	positive_degree	6
+china_breed_corrected_displayed_nodes.tsv.gz	negative_degree	0
+china_breed_corrected_displayed_nodes.tsv.gz	mean_abs_correlation	0.2341
+china_breed_corrected_displayed_nodes.tsv.gz	min_abs_correlation	0.2049
+china_breed_corrected_displayed_nodes.tsv.gz	max_abs_correlation	0.2618
+china_breed_corrected_displayed_nodes.tsv.gz	raw_mean_count_after_zero_column_removal	72.08916323731138
+china_breed_corrected_displayed_nodes.tsv.gz	relative_abundance_for_node_size	0.003169264991741016
+china_breed_corrected_displayed_nodes.tsv.gz	relative_abundance_denominator	sum of taxon mean counts across corrected nonzero sample columns
+china_breed_corrected_displayed_nodes.tsv.gz	incident_displayed_edges	6
+china_breed_corrected_displayed_nodes.tsv.gz	taxon_filter	mean relative abundance >0.0005 and prevalence >0.20
+china_breed_corrected_displayed_nodes.tsv.gz	significance_threshold	empirical P <= 0.001
+china_breed_corrected_displayed_nodes.tsv.gz	specificity_rule	p_ex > 0.001 OR abs(r_ex) < 0.15
+china_breed_corrected_displayed_nodes.tsv.gz	display_threshold	abs(r_in) > 0.20
+exact_hybrid_phylum_panel_source.tsv.gz	sample_id	SRR8719242
+exact_hybrid_phylum_panel_source.tsv.gz	continent	Asia
+exact_hybrid_phylum_panel_source.tsv.gz	phylum_group	Firmicutes
+exact_hybrid_phylum_panel_source.tsv.gz	relative_abundance	0.00838222967309304
+exact_hybrid_phylum_panel_source.tsv.gz	full_panel_order	7
+exact_hybrid_phylum_panel_source.tsv.gz	full_within_continent_order	7
+exact_hybrid_phylum_panel_source.tsv.gz	hybrid_panel_order	1
+exact_hybrid_phylum_panel_source.tsv.gz	hybrid_within_continent_order	1
+exact_hybrid_phylum_panel_source.tsv.gz	sampling_seed	123
+exact_hybrid_phylum_panel_source.tsv.gz	sampling_fraction_rule	15% by dplyr::sample_frac
+exact_hybrid_phylum_panel_source.tsv.gz	continent_full_n	15926
+exact_hybrid_phylum_panel_source.tsv.gz	continent_displayed_n	2389
+exact_hybrid_phylum_panel_source.tsv.gz	sample_ordering_rule	continent ascending, then cumulative sums of Firmicutes + Bacteroidota + Proteobacteria + Fusobacteriota + Spirochaetota ascending; stable tie handling
+exact_hybrid_phylum_panel_source.tsv.gz	closure_definition	Top 5 bacterial phyla plus Other; renormalized within sample
+Task4_overview_dual_axis_top10_source.tsv.gz	taxonomic_level	Class
+Task4_overview_dual_axis_top10_source.tsv.gz	taxon_label	Clostridia
+Task4_overview_dual_axis_top10_source.tsv.gz	Prevalence_pct	97.232358488903
+Task4_overview_dual_axis_top10_source.tsv.gz	MeanAbundance_pct	35.14666190150309
+Task4_overview_dual_axis_top10_source.tsv.gz	eligible_sample_universe_n	56727
+Task4_overview_dual_axis_top10_source.tsv.gz	detection_rule	relative_abundance_pct > 0
+Task4_overview_dual_axis_top10_source.tsv.gz	prevalence_denominator_includes_zero_abundance_samples	True
+Task4_overview_dual_axis_top10_source.tsv.gz	mean_abundance_includes_zeros	True
+Task4_overview_dual_axis_top10_source.tsv.gz	abundance_units_in_source	percentage (0-100)
+Task4_overview_dual_axis_top10_source.tsv.gz	ranking_variable	Prevalence_pct desc, then MeanAbundance_pct desc
+Task4_overview_dual_axis_top10_source.tsv.gz	top_n	10
+Task4_overview_dual_axis_top10_source.tsv.gz	unclassified_treatment	labels matching Unassigned/empty/__/uncultured-style invalid tokens removed before aggregation in plot_taxonomic_composition_5levels.R
+Task4_overview_dual_axis_top10_source.tsv.gz	phylum_nomenclature_note	Analytical labels retained as stored in clean taxonomy (e.g. Firmicutes, Bacteroidota, Proteobacteria); no Bacillota/Pseudomonadota rename in this plotting chain
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	sample_id	16S.CF1
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	continent	Asia
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	phylum_group	Bacteroidota
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	relative_abundance	0.389601172214845
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	geometry	geom_freqpoly
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	x_variable	Relative_Abundance (proportion 0-1 after within-sample renormalization)
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	y_variable	Number of samples in abundance bins (log10 axis)
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	bins	40
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	log_base	10
+Task5_phylum_abundance_freqpoly_input_source.tsv.gz	axis_labels_show	original sample counts on log10 scale
+Fig1_DBI_source_data.tsv.gz	scale	Continent
+Fig1_DBI_source_data.tsv.gz	observed	5.400750346498724
+Fig1_DBI_source_data.tsv.gz	null_median	161.30760804208765
+Fig1_DBI_source_data.tsv.gz	null_mean	169.75585607179838
+Fig1_DBI_source_data.tsv.gz	null_sd	45.58429170435054
+Fig1_DBI_source_data.tsv.gz	empirical_p	0
+Fig1_DBI_source_data.tsv.gz	z_score	-3.6055206646901503
+Fig1_DBI_source_data.tsv.gz	obs_null_ratio	0.03348106398732033
+Fig2_RF_AUC_source_data.tsv.gz	region	Europe
+Fig2_RF_AUC_source_data.tsv.gz	level	Continent
+Fig2_RF_AUC_source_data.tsv.gz	continent	Europe
+Fig2_RF_AUC_source_data.tsv.gz	auc	0.98
+Fig2_RF_AUC_source_data.tsv.gz	n_samples	23955
+Fig2_RF_AUC_source_data.tsv.gz	auc_sd	NA
+Fig2_RF_AUC_source_data.tsv.gz	auc_min	NA
+Fig2_RF_AUC_source_data.tsv.gz	auc_max	NA
+Fig3_Signature_source_data.tsv.gz	country	Austria
+Fig3_Signature_source_data.tsv.gz	Original_ID	d__Archaea;p__Euryarchaeota;c__Methanobacteria;o__Methanobacteriales;f__Methanobacteriaceae;g__Methanobrevibacter
+Fig3_Signature_source_data.tsv.gz	Mean_Abund	0.6881357666817995
+Fig3_Signature_source_data.tsv.gz	Z_Score	-0.0533534687368243
+Fig3_Signature_source_data.tsv.gz	Mangled_ID	d__Archaea.p__Euryarchaeota.c__Methanobacteria.o__Methanobacteriales.f__Methanobacteriaceae.g__Methanobrevibacter
+Fig3_Signature_source_data.tsv.gz	Display_Label	Methanobrevibacter
+Fig3_Signature_source_data.tsv.gz	Importance	NA
+Fig3_Signature_source_data.tsv.gz	Primary_country	China
+Fig3_Signature_source_data.tsv.gz	continent	Asia
+Fig3_Signature_source_data.tsv.gz	Max_Imp	0.0174021472440385
+Fig3_Signature_source_data.tsv.gz	n_samples	1684
+fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	group1	Local China
+fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	group2	crossbred
+fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	p_value	9.350890076565893e-64
+fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	p_adj	1.4026335114848836e-63
+fig04_panel_C_shannon_wilcoxon_bh.tsv.gz	sig_label	***
+fig01B_sample_read_counts.tsv.gz	sample-id	ERR1739902
+fig01B_sample_read_counts.tsv.gz	input	58999
+fig01B_sample_read_counts.tsv.gz	non-chimeric	39576
+T28_network_summary_metrics.tsv.gz	continent	Asia
+T28_network_summary_metrics.tsv.gz	specific_edges	176
+T28_network_summary_metrics.tsv.gz	network_nodes	73
+T28_network_summary_metrics.tsv.gz	mean_degree	4.82191780821918
+T28_network_summary_metrics.tsv.gz	scope	continent-specific displayed network
+T28_network_summary_metrics.tsv.gz	sample_N	16306
+T28_network_summary_metrics.tsv.gz	mean_abundance_filter	>0.05%
+T28_network_summary_metrics.tsv.gz	prevalence_filter	>30%
+T28_network_summary_metrics.tsv.gz	correlation_threshold	|r|>0.20
+T28_network_summary_metrics.tsv.gz	empirical_P_threshold	<=0.001
+T28_network_summary_metrics.tsv.gz	bootstrap_count	1000
+T28_network_summary_metrics.tsv.gz	permutation_count	1000
+T28_network_summary_metrics.tsv.gz	positive_edges	
+T28_network_summary_metrics.tsv.gz	negative_edges	
+T28_network_summary_metrics.tsv.gz	positive_negative_ratio	
+T28_network_summary_metrics.tsv.gz	density	
+T28_network_summary_metrics.tsv.gz	components	
+T28_network_summary_metrics.tsv.gz	modularity	
+T29_network_edge_list.tsv.gz	scope	geography
+T29_network_edge_list.tsv.gz	group	Asia
+T29_network_edge_list.tsv.gz	normalized_edge_id	anaeroplasma--bacteroidalesrf16group
+T29_network_edge_list.tsv.gz	taxon_1	Bacteroidales_RF16_group
+T29_network_edge_list.tsv.gz	taxon_2	Anaeroplasma
+T29_network_edge_list.tsv.gz	correlation	0.3337
+T29_network_edge_list.tsv.gz	empirical_P	0.001
+T29_network_edge_list.tsv.gz	sign	Positive
+T29_network_edge_list.tsv.gz	edge_status	focal-specific
+T29_network_edge_list.tsv.gz	bootstrap_count	1000
+T29_network_edge_list.tsv.gz	permutation_count	1000
+T29_network_edge_list.tsv.gz	phylum_taxon_1	Bacteroidota
+T29_network_edge_list.tsv.gz	phylum_taxon_2	Firmicutes
+T29_network_edge_list.tsv.gz	duplicate_reversed_edge	False
