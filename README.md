@@ -1,6 +1,6 @@
 # Global swine gut microbiome
 
-Code and data for **A Global Reference Compendium of the Swine Gut Microbiome Reveals Under-characterized Diversity and Biogeographic Structure**.
+Code and data for **A Global Reference Compendium of the Swine Gut Microbiome Reveals Core Bacterial Members and Geographic Signatures**.
 
 Run the R scripts to generate Figures 1–5 and Supplementary Figures S1–S4 from the included tables.
 
