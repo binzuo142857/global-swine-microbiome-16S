@@ -42,3 +42,7 @@ The figure command uses the supplied result tables. Optional network analysis co
 ## Citation
 
 See `CITATION.cff` for the manuscript authors and title. Please include the commit identifier when citing a code version. Questions are welcome through Issues.
+
+### Data consistency notes
+
+Figure 2D abundance/prevalence data include the five source values for `[Eubacterium]_coprostanoligenes_group`. Figure S2A empirical P values use `(b + 1)/(B + 1)`; both comparisons have b = 0 and B = 999, yielding 0.001. Permutation DBI values are unchanged.
